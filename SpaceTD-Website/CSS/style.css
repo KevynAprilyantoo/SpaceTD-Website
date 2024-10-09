@@ -1,0 +1,791 @@
+:root {
+  --primary: #ffffff;
+  --bg: #0a0a0a;
+  --bsolid: #000000;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.body1 {
+  font-family: "Work Sans", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+}
+
+/* Navbar */
+
+.navbar-logo {
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #000000;
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  margin-bottom: 10px;
+}
+
+.navbar .navbar-nav a {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ffffff;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.9);
+}
+
+.home .content a:hover {
+  color: #c9c9c9;
+}
+
+.home .content a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.home .content a:hover::after {
+  transform: scaleX(0.9);
+}
+
+.navbar .navbar-extra a {
+  color: #ffffff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #ffffff;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/ObjectSpaceTD/nasa-Q1p7bh3SHj8-unsplash.jpg");
+  position: relative;
+  background-size: cover;
+}
+
+.home .content {
+  padding: 1.4rem 7%;
+  max-width: 90rem;
+  font-size: 2.5rem;
+}
+
+.join {
+  font-size: 2rem;
+  padding: 7rem 7%;
+  max-width: 90rem;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.home2 .content {
+  color: #000000;
+  padding: 2.5rem;
+}
+
+.home2 .content h1 {
+  font-size: 2rem;
+}
+
+.home2 .content h2 {
+  font-size: 1.3rem;
+  color: #847c7c;
+}
+
+.home2 .content p {
+  padding: 4rem 10%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.home2 .content h3 {
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.home3 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/ObjectSpaceTD/Falcon_Heavy_Demo_Mission_\(40126461851\).jpg");
+  position: relative;
+  background-size: cover;
+}
+
+.home3 .content {
+  padding: 1.4rem 7%;
+  font-size: 3rem;
+  color: #000000;
+  text-align: center;
+  max-width: 40rem;
+}
+
+.rewatch {
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.rewatch:hover {
+  color: #c9c9c9;
+}
+
+.rewatch::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.rewatch:hover::after {
+  transform: scaleX(0.4);
+}
+
+.container {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50vw;
+  min-height: 75px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.footer {
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 4.5rem 3%;
+  background-color: #000000;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 1.7vw;
+}
+
+.footer .footer-foot a {
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.container .container-text {
+  color: #ffffff;
+  padding: 1.7rem;
+}
+
+.angka {
+  justify-content: space-between;
+  word-spacing: 6vw;
+  /* font-size: 5rem; */
+  font-size: 3.5vw;
+}
+
+.total {
+  /* font-size: 2rem; */
+  font-size: 1.4vw;
+}
+
+.opening {
+  min-height: 100vh;
+  display: flex;
+  background-image: url(/ObjectSpaceTD/rocket-01.jpg);
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.opening .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 1vw;
+}
+
+.opening .content h1 {
+  font-size: 4rem;
+}
+
+.empty-space {
+  height: 20px;
+  background-color: #0a0a0a;
+}
+
+.vehicles {
+  min-height: 100vh;
+  display: flex;
+  background-image: url(/ObjectSpaceTD/falcon9.jpg);
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.vehicles .content {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 42rem;
+  padding-left: 3%;
+}
+
+.vehicles .content p {
+  color: #3b3b3b;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.Tittlereview {
+  font-size: 3rem;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 5%;
+  font-weight: lighter;
+}
+
+.review1 {
+  display: flex;
+  width: 60vw;
+  margin-top: 2vw;
+  margin-left: 8vw;
+  font-size: 0.8vw;
+}
+
+.review2 {
+  display: flex;
+  width: 75vw;
+  margin-left: 8vw;
+  margin-top: 2vw;
+  font-size: 0.8vw;
+}
+
+.launching {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.vehicles2 {
+  min-height: 100vh;
+  display: flex;
+  background-image: url(/ObjectSpaceTD/dragon.jpg);
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.vehicles2 .content {
+  color: #ffffff;
+  padding-left: 2%;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 30rem;
+}
+
+.review3 {
+  display: flex;
+  width: 60vw;
+  margin-top: 2vw;
+  margin-left: 8vw;
+  font-size: 0.8vw;
+}
+
+.review4 {
+  display: flex;
+  width: 75vw;
+  margin-left: 8vw;
+  margin-top: 2vw;
+  font-size: 0.8vw;
+}
+
+.vehicles3 {
+  min-height: 100vh;
+  display: flex;
+  background-image: url(/ObjectSpaceTD/starship.jpg);
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.vehicles3 .content {
+  color: #ffffff;
+  padding-left: 4%;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 40rem;
+}
+
+.vehicles3 .content p {
+  color: #3b3b3b;
+}
+
+.review5 {
+  padding: 1rem;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.opprogram {
+  min-height: 100vh;
+  display: flex;
+  background-image: url(/ObjectSpaceTD/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.opprogram .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 120vw;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.programContent {
+  display: flex;
+  padding: 4rem 10%;
+}
+
+.gambar1 {
+  display: flex;
+  height: 30vw;
+  width: 37vw;
+  margin-left: 10vw;
+  background-repeat: no-repeat;
+  margin-top: 1vw;
+}
+
+.program1text {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  font-size: 0.8vw;
+  text-align: center;
+  max-width: 29vw;
+}
+
+.program1text h1 {
+  font-size: 2.5vw;
+}
+
+.program1text h2 {
+  font-size: 1.7vw;
+  font-weight: 100;
+}
+
+.join2 {
+  display: flex;
+  padding-top: 1rem;
+  flex-direction: column;
+  font-size: 1.2vw;
+  text-align: center;
+  color: #a86565;
+}
+
+.programContent2 {
+  display: flex;
+  padding: 5rem 10%;
+}
+
+.gambar2 {
+  display: flex;
+  height: 30vw;
+  width: 37vw;
+  background-repeat: no-repeat;
+}
+
+.program2text {
+  margin-left: 6vw;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin-top: 2vw;
+  margin-left: 10vw;
+  font-size: 0.8vw;
+  text-align: center;
+  max-width: 25vw;
+}
+
+.program2text h1 {
+  font-size: 2.5vw;
+}
+
+.program2text h2 {
+  font-size: 1.7vw;
+  font-weight: 100;
+}
+
+.programContent3 {
+  display: flex;
+  padding: 4rem 10%;
+}
+
+.gambar3 {
+  display: flex;
+  height: 30vw;
+  width: 37vw;
+  margin-left: 4vw;
+  background-repeat: no-repeat;
+  margin-top: 1vw;
+}
+
+.program3text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  font-size: 0.8vw;
+  text-align: center;
+  max-width: 40vw;
+}
+
+.program3text h1 {
+  font-size: 2.5vw;
+}
+
+.program3text h2 {
+  font-size: 1.7vw;
+  font-weight: 100;
+}
+
+.oplaunch {
+  min-height: 70vh;
+  display: flex;
+  background-image: url(/ObjectSpaceTD/lauch3.jpg);
+  background-position: 0px 0px;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.oplaunch .content {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-left: 55vw;
+  padding: 0 5%;
+}
+
+.launch1 {
+  min-height: 100vh;
+  display: flex;
+  background-image: url(/ObjectSpaceTD/launch1.jpg);
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.launch1 .content {
+  color: #ffffff;
+  padding-left: 3%;
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 1.4rem;
+  max-width: 40rem;
+}
+
+.launch1 .content p {
+  color: #373737;
+}
+
+.rewatch2 {
+  color: #ffffff;
+}
+
+.rewatch2:hover {
+  color: #a86565;
+}
+
+.rewatch2::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.rewatch2:hover::after {
+  transform: scaleX(0.3);
+}
+
+.launch2 {
+  min-height: 100vh;
+  display: flex;
+  background-image: url(/ObjectSpaceTD/launch2.jpg);
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.launch2 .content {
+  color: #ffffff;
+  padding-left: 3%;
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 40rem;
+}
+
+.launch2 .content p {
+  color: #373737;
+}
+
+.background {
+  background-image: url(/ObjectSpaceTD/register.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.form {
+  position: absolute;
+  margin-top: 90px;
+  padding: 1px;
+  width: 100%;
+  max-width: 480px;
+  background: transparent;
+  border-radius: 26px;
+  border: 1.5px solid #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+form .input {
+  height: 35px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.background .form.login {
+  transition: all 0.2s ease;
+  transform: translateX(0);
+}
+
+.background .form.signup {
+  position: absolute;
+  transform: translateX(-1300px);
+  transition: none;
+}
+
+.background.active {
+  height: 860px;
+}
+
+.background.active .form.login {
+  transition: none;
+  visibility: hidden;
+  transform: translateX(-500px);
+}
+
+.background.active .form.signup {
+  transition: all 0.2s ease;
+  transform: translateX(0);
+}
+
+.login {
+  padding: 1rem;
+  width: 100%;
+}
+
+.login h1 {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.input {
+  background-color: transparent;
+  position: relative;
+  height: 1.9vw;
+  width: 100%;
+  border-bottom: 1px solid #c9c9c9;
+  margin: 1vw 0;
+}
+
+.input input {
+  background: transparent;
+  border: none;
+  outline: 0;
+  color: #000000;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.reglogo {
+  color: #000000;
+}
+
+.submit-btn {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px;
+}
+
+.form-link {
+  text-align: center;
+  margin: 9px;
+}
+
+.form-link span {
+  color: #000000;
+}
+
+.form-link a {
+  color: rgb(28, 33, 53);
+  font-weight: 1000;
+}
+
+.form-link a:hover {
+  text-decoration: underline;
+}
+
+.agree {
+  margin-bottom: 7px;
+}
+
+.input select {
+  background: transparent;
+}
+
+/* queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Hp */
+@media (max-width: 683px) {
+  html {
+    font-size: 55%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 30rem;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: #000000;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav:after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav:hover::after {
+    transform: scaleX(0.2);
+  }
+}

@@ -55,7 +55,7 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: #ffffff;
+  color: #c9c9c9;
 }
 
 .navbar .navbar-nav a::after {
@@ -105,7 +105,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("/ObjectSpaceTD/nasa-Q1p7bh3SHj8-unsplash.jpg");
+  background-image: url("../ObjectSpaceTD/nasa-Q1p7bh3SHj8-unsplash.jpg");
   position: relative;
   background-size: cover;
 }
@@ -156,7 +156,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("/ObjectSpaceTD/Falcon_Heavy_Demo_Mission_\(40126461851\).jpg");
+  background-image: url("../ObjectSpaceTD/Falcon_Heavy_Demo_Mission_\(40126461851\).jpg");
   position: relative;
   background-size: cover;
 }
@@ -241,7 +241,7 @@ body {
 .opening {
   min-height: 100vh;
   display: flex;
-  background-image: url(/ObjectSpaceTD/rocket-01.jpg);
+  background-image: url(../ObjectSpaceTD/rocket-01.jpg);
   align-items: center;
   position: relative;
   background-size: cover;
@@ -269,7 +269,7 @@ body {
 .vehicles {
   min-height: 100vh;
   display: flex;
-  background-image: url(/ObjectSpaceTD/falcon9.jpg);
+  background-image: url(../ObjectSpaceTD/falcon9.jpg);
   align-items: center;
   position: relative;
   background-size: cover;
@@ -334,7 +334,7 @@ body {
 .vehicles2 {
   min-height: 100vh;
   display: flex;
-  background-image: url(/ObjectSpaceTD/dragon.jpg);
+  background-image: url(../ObjectSpaceTD/dragon.jpg);
   align-items: center;
   position: relative;
   background-size: cover;
@@ -367,7 +367,7 @@ body {
 .vehicles3 {
   min-height: 100vh;
   display: flex;
-  background-image: url(/ObjectSpaceTD/starship.jpg);
+  background-image: url(../ObjectSpaceTD/starship.jpg);
   align-items: center;
   position: relative;
   background-size: cover;
@@ -397,7 +397,7 @@ body {
 .opprogram {
   min-height: 100vh;
   display: flex;
-  background-image: url(/ObjectSpaceTD/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
+  background-image: url(../ObjectSpaceTD/jeremy-thomas-E0AHdsENmDg-unsplash.jpg);
   align-items: center;
   position: relative;
   background-size: cover;
@@ -526,7 +526,7 @@ body {
 .oplaunch {
   min-height: 70vh;
   display: flex;
-  background-image: url(/ObjectSpaceTD/lauch3.jpg);
+  background-image: url(../ObjectSpaceTD/lauch3.jpg);
   background-position: 0px 0px;
   align-items: center;
   position: relative;
@@ -545,7 +545,7 @@ body {
 .launch1 {
   min-height: 100vh;
   display: flex;
-  background-image: url(/ObjectSpaceTD/launch1.jpg);
+  background-image: url(../ObjectSpaceTD/launch1.jpg);
   align-items: center;
   position: relative;
   background-size: cover;
@@ -588,7 +588,7 @@ body {
 .launch2 {
   min-height: 100vh;
   display: flex;
-  background-image: url(/ObjectSpaceTD/launch2.jpg);
+  background-image: url(../ObjectSpaceTD/launch2.jpg);
   align-items: center;
   position: relative;
   background-size: cover;
@@ -608,7 +608,7 @@ body {
 }
 
 .background {
-  background-image: url(/ObjectSpaceTD/register.jpg);
+  background-image: url(../ObjectSpaceTD/register.jpg);
   width: 100vw;
   height: 100vh;
   background-position: center;
